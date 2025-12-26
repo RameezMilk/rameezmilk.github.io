@@ -40,7 +40,7 @@ jobs:
       - name: Upload React build
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./multify/dist
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
