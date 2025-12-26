@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/multify-site/',
   build: {
-    outDir: '../dist',
+    outDir: 'dist',
     emptyOutDir: true,
   },
 })
