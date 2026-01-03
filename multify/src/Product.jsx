@@ -81,17 +81,17 @@ export default function ProductPage() {
         />
         <div className="product-btn-row" style={{ display: 'flex', gap: '0.7rem', marginTop: 0, justifyContent: 'center' }}>
           <a
-            className="product-btn product-btn-filled"
             href="https://github.com/RameezMilk/multify-site/releases/download/v0.1/Multify-v0.1-macOS.zip"
             download
+            className="product-btn product-btn-filled"
             style={{ textDecoration: 'none', display: 'inline-block' }}
           >
             Download
           </a>
           <a
-            className="product-btn product-btn-tonal"
             href="/assets/Multify_User_Guide.pdf"
             download
+            className="product-btn product-btn-tonal"
             style={{ textDecoration: 'none', display: 'inline-block' }}
           >
             User Guide
