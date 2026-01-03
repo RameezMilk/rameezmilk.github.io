@@ -1,3 +1,89 @@
+/* Product page buttons */
+.product-btn {
+  font-family: inherit;
+  font-size: 1.08rem;
+  font-weight: 600;
+  padding: 0.95rem 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 16px 0 rgba(20, 241, 149, 0.10), 0 1.5px 0 0 rgba(16,185,129,0.10);
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.product-btn-filled {
+  background: linear-gradient(135deg, #14f195 0%, #10b981 100%);
+  color: #0a1f1a;
+  box-shadow: 0 4px 32px 0 rgba(20, 241, 149, 0.18), 0 1.5px 0 0 rgba(16,185,129,0.18);
+  border: 1.5px solid #10b981;
+}
+.product-btn-filled:hover {
+  background: linear-gradient(135deg, #10b981 0%, #14f195 100%);
+  color: #000;
+  box-shadow: 0 6px 36px 0 rgba(20, 241, 149, 0.22);
+}
+
+.product-btn-tonal {
+  background: linear-gradient(135deg, rgba(20, 241, 149, 0.10) 0%, rgba(16, 185, 129, 0.10) 100%);
+  color: #14f195;
+  border: 1.5px solid rgba(20, 241, 149, 0.32);
+}
+.product-btn-tonal:hover {
+  background: linear-gradient(135deg, rgba(20, 241, 149, 0.18) 0%, rgba(16, 185, 129, 0.18) 100%);
+  color: #fff;
+  border: 1.5px solid #14f195;
+}
+
+/* Product page tilting card styles */
+.product-tilt-card {
+  width: 420px;
+  max-width: 90vw;
+  aspect-ratio: 16/10;
+  background: rgba(20, 30, 30, 0.85);
+  border-radius: 32px;
+  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.18s cubic-bezier(.25,.8,.25,1), box-shadow 0.18s cubic-bezier(.25,.8,.25,1);
+  will-change: transform;
+  cursor: pointer;
+  perspective: 800px;
+  margin: 0 auto;
+}
+
+.product-tilt-card img {
+  width: 90%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 2px 24px 0 rgba(0,0,0,0.18);
+  pointer-events: none;
+  user-select: none;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .product-tilt-card {
+    width: 98vw;
+    min-width: 0;
+    border-radius: 18px;
+  }
+  .product-tilt-card img {
+    border-radius: 12px;
+  }
+}
+body, html, #root {
+  scroll-snap-type: y mandatory;
+}
+.hero {
+  scroll-snap-align: start;
+}
+.next-section {
+  scroll-snap-align: start;
+}
 @media (max-width: 600px) {
   .navbar {
     position: static !important;

@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/multify-site/',
+  base: '/', // For local dev: opens at localhost:5173/
   build: {
     outDir: 'dist',
     emptyOutDir: true,
